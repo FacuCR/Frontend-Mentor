@@ -1,0 +1,62 @@
+$body-bg: #c5e4e7;
+$primary: #00474b;
+$secondary: #3e6565;
+$info: #a0e7df;
+$light: #1fc6a9;
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+*{
+    font-family: 'Space Mono', monospace;
+    box-sizing: border-box;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+
+.dollar {
+    background-image: url(../tip-calculator-app-main/tip-calculator-app-main/images/icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-x: 1rem;
+}
+
+.custom-ptg {
+    text-align: center;
+}
+
+.boton:hover {
+    background-color: $info !important;
+    color: $primary !important;
+    border-color: $info !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.form-control.text-primary:active,
+.form-control.text-primary:focus {
+    border-color: $info;
+    box-shadow: $info 0px 1px 4px, $info 0px 0px 0px 3px !important;
+}
+
+.person {
+    background-image: url(../tip-calculator-app-main/tip-calculator-app-main/images/icon-person.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-x: 1rem;
+}
+
+.btn-info {
+    color: $primary !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+@import "../../node_modules/bootstrap/scss/bootstrap";

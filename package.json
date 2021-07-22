@@ -1,0 +1,23 @@
+{
+  "name": "Frontend-Mentor",
+  "version": "1.0.0",
+  "description": "Desafios de https://www.frontendmentor.io/challenges",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FacuCR/Frontend-Mentor.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FacuCR/Frontend-Mentor/issues"
+  },
+  "homepage": "https://github.com/FacuCR/Frontend-Mentor#readme",
+  "dependencies": {
+    "bootstrap": "^5.0.0-beta3"
+  }
+}

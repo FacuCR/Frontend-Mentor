@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Calculadora de propinas</title>
+        <meta name="description" content="Desafio de Frontend Mentor (https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX)">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+        <link rel="stylesheet" href="css/custom.css">
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+    </head>
+    <body class="vh-100 d-flex align-items-center bg-body">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <main class="container">
+            <section class="row">
+                <h1 class="col-12 d-flex justify-content-center mt-5 mb-5 display-5 text-secondary">SPLI<br>TTER</h1>
+            </section>
+            <section class="row mb-5">
+                <article class="card rounded-3 shadow-sm col-12 p-4">
+                    <div class="card-body">
+                        <!--Columna izquierda-->
+                        <div class="row">
+                            <div class="col-12 col-lg-6 d-flex pe-5">
+                                <form>
+                                    <div class="d-flex flex-column mb-5">
+                                        <label for="dinero" class="text-secondary mb-2">Bill</label>
+                                        <input type="number" name="" id="dinero" class="form-control text-primary shadow-none px-2 dollar" dir="rtl">
+                                    </div>
+                                    <div class="d-flex flex-column mb-5">
+                                        <label for="btn-group" class="text-secondary mb-2">Select Tip %</label>
+                                        <div class="btn-group d-flex flex-column" role="group" aria-label="Basic radio toggle button group">
+                                            <!--Fila de arriba-->
+                                            <div class="row mb-4">
+                                                <div class="col-4">
+                                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                                                    <label class="fs-4 btn btn-primary py-2 px-5 shadow-none boton" for="btnradio1"> 05%</label>
+                                                </div>
+                                                <div class="col-4">
+                                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                                                    <label class="fs-4 btn btn-primary py-2 px-5 shadow-none boton" for="btnradio2">10%</label>
+                                                </div>
+                                                <div class="col-4">
+                                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                                                    <label class="fs-4 btn btn-primary py-2 px-5 shadow-none boton" for="btnradio3">15%</label>
+                                                </div>    
+                                            </div>
+                                            <!---Fila de abajo-->
+                                            <div class="row d-flex align-items-center">
+                                                <div class="col-4">
+                                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off" checked>
+                                                    <label class="fs-4 btn btn-primary py-2 px-5 shadow-none boton" for="btnradio4">25%</label>
+                                                </div>
+                                                <div class="col-4">
+                                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off">
+                                                    <label class="fs-4 btn btn-primary py-2 px-5 shadow-none boton" for="btnradio5">50%</label>
+                                                </div>
+                                                <div class="col-4">
+                                                    <input type="number" name="" min="0" id="custom" class="form-control text-primary fs-4 py-2  custom-ptg" placeholder="Custom">
+                                                </div>    
+                                            </div>
+                                          </div>
+                                    </div> 
+                                    <div class="d-flex flex-column mb-5">
+                                        <label for="numpeop" class="text-secondary mb-2">Number of People</label>
+                                        <input type="number" name="" id="numpeop" class="form-control text-primary shadow-none px-2 person" dir="rtl" value="0">
+                                    </div>                            
+                                </form>
+                            </div>
+                            <!--Columna derecha-->
+                            <section class="card col-12 col-lg-6 d-flex justify-content-center px-4 bg-primary">
+                                <div class="row mb-5">
+                                    <div class="col-6">
+                                        <p class="text-white">Tip Amount</p>
+                                        <p class="text-muted">/ person</p>
+                                    </div>
+                                    <p class="col-6 display-4 text-light">$0.00</p>
+                                </div>
+                                <div class="row mb-5">
+                                    <div class="col-6">
+                                        <p class="text-white">Total</p>
+                                        <p class="text-muted">/ person</p>
+                                    </div>
+                                    <p class="col-6 display-4 text-light">$0.00</p>
+                                </div>
+                                <div class="row d-flex justify-content-center">
+                                    <button type="button" class="btn btn-info w-75">RESET</button>
+                                </div>
+                            </section>
+                        </div>                        
+                    </div>                    
+                </article>                
+            </section>
+        </main>
+    </body>
+</html>
