@@ -31,7 +31,7 @@
                                 <form>
                                     <div class="d-flex flex-column mb-5">
                                         <label for="dinero" class="text-secondary mb-2">Bill</label>
-                                        <input type="number" name="" id="dinero" class="inpBill form-control text-primary shadow-none px-2" dir="rtl">
+                                        <input type="number" name="" id="dinero" class="inpBill form-control text-primary shadow-none px-2" dir="rtl" min="0" max="999999">
                                     </div>
                                     <div class="d-flex flex-column mb-5">
                                         <label for="btn-group" class="text-secondary mb-2">Select Tip %</label>
@@ -39,37 +39,37 @@
                                             <!--Fila de arriba-->
                                             <div class="row mb-4">
                                                 <div class="col-4">
-                                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-                                                    <label class="fs-4 btn btn-primary py-2 px-5 shadow-none boton" for="btnradio1"> 05%</label>
+                                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" value="5" checked>
+                                                    <label class="fs-4 btn btn-primary py-2 px-5 shadow-none boton" for="btnradio1">05%</label>
                                                 </div>
                                                 <div class="col-4">
-                                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" value="10">
                                                     <label class="fs-4 btn btn-primary py-2 px-5 shadow-none boton" for="btnradio2">10%</label>
                                                 </div>
                                                 <div class="col-4">
-                                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off" value="15">
                                                     <label class="fs-4 btn btn-primary py-2 px-5 shadow-none boton" for="btnradio3">15%</label>
                                                 </div>    
                                             </div>
                                             <!---Fila de abajo-->
                                             <div class="row d-flex align-items-center">
                                                 <div class="col-4">
-                                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off" checked>
+                                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off" value="25">
                                                     <label class="fs-4 btn btn-primary py-2 px-5 shadow-none boton" for="btnradio4">25%</label>
                                                 </div>
                                                 <div class="col-4">
-                                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off">
+                                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off" value="50">
                                                     <label class="fs-4 btn btn-primary py-2 px-5 shadow-none boton" for="btnradio5">50%</label>
                                                 </div>
                                                 <div class="col-4">
                                                     <input type="number" name="" min="0" id="custom" class="form-control text-primary fs-4 py-2  custom-ptg" placeholder="Custom">
                                                 </div>    
                                             </div>
-                                          </div>
+                                        </div>
                                     </div> 
                                     <div class="d-flex flex-column mb-5">
                                         <label for="numpeop" class="text-secondary mb-2">Number of People</label>
-                                        <input type="number" name="" id="numpeop" class="inpNumPep form-control text-primary shadow-none px-2 person" dir="rtl" placeholder="0">
+                                        <input type="number" name="" id="numpeop" class="inpNumPep form-control text-primary shadow-none px-2 person" dir="rtl" placeholder="0" min="0" max="100">
                                     </div>                            
                                 </form>
                             </div>
@@ -80,14 +80,14 @@
                                         <p class="text-white">Tip Amount</p>
                                         <p class="text-muted">/ person</p>
                                     </div>
-                                    <p class="col-6 display-4 text-light">$0.00</p>
+                                    <p class="col-6 display-4 text-light">$<span class="tipAmount">0.00</span></p>
                                 </div>
                                 <div class="row mb-5">
                                     <div class="col-6">
                                         <p class="text-white">Total</p>
                                         <p class="text-muted">/ person</p>
                                     </div>
-                                    <p class="col-6 display-4 text-light">$0.00</p>
+                                    <p class="col-6 display-4 text-light">$<span class="total">0.00</span></p>
                                 </div>
                                 <div class="row d-flex justify-content-center">
                                     <button type="button" disabled="true" class="btnReset btn btn-info w-75">RESET</button>
