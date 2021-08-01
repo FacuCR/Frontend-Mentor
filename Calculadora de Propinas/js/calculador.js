@@ -20,6 +20,13 @@ inpBill.addEventListener("input", ComprobarInputs);
 
 inpNumPep.addEventListener("input", ComprobarInputs);
 
+btnReset.addEventListener("click", () => {
+    inpBill.value = "";
+    inpNumPep.value = "";
+    tipAmount.innerHTML = "0.00";
+    total.innerHTML = "0.00";
+});
+
 // Calculadora de la propina por personas
 const CalcularPropina = () => {
     if (inpBill.value !== "" && inpNumPep.value !== "") {
